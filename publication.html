@@ -59,6 +59,7 @@
                     <li><a class="nav-link scrollto " href="research-project.html">Research Project</a></li>
                     <li><a class="nav-link scrollto" href="syllabus.html">Syllabus</a></li>
                     <li><a class="nav-link scrollto" href="english.html">English</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#activity">Activity</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -994,7 +995,7 @@
                 <td> in: LIBER AMICORUM MAKOTO ARAI 375-392 (DAGMAR COESTER-WALTJEN, VOLKER LIPP, DONOVAN W.M. WATERS
                     eds. 2015)</td>
                 <td></td>
-                <td></td>
+                <td>2015年</td>
                 <td></td>
                 <td>ISBN:978-3-8487-2059-0；<a title=""
                         href="./Publication_files/publication_articles/英文/Adult Guardianship and Care in Taiwan LIBER AMICORUM MAKOTO ARAI.pdf">下載檔案</a>；<a
@@ -1735,29 +1736,22 @@
                             });
                         });
                     },
-                    "columnDefs": [
-                        {
-                            "targets": [0],
-                            "visible": false
-                        }
-                    ],
                     "columns": [
-                        null,
-                        null,
-                        { "width": "11%" },
-                        null,
-                        null,
-                        { "width": "10%" },
-                        { "width": "9%" },
-                        { "width": "8%" },
-                        null,
+                        { "sortable": false, "visible": false},
+                        { "sortable": false },
+                        { "width": "11%", "sortable": false },
+                        { "sortable": false },
+                        { "sortable": false },
+                        { "width": "10%", "sortable": false},
+                        { "width": "9%", "sortable": true},
+                        { "width": "8%", "sortable": false},
+                        { "sortable": false },
                     ],
                     "paging": true,
                     "autoWidth": true,
                     "pageLength": '25',
                     "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
                     "order": [[0, 'asc'], [6, 'desc']],
-                    "ordering": false,
                     "orderMulti": true,
                 }
             );
